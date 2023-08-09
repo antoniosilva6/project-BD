@@ -1,0 +1,256 @@
+html {
+  background-image: radial-gradient(circle at -19.64% 37.72%, #7c438a 0, #5f2c7a 25%, #3a1068 50%, #030056 75%, #000049 100%);
+  background-size: 500% 100%;
+  animation: degrade-animated 4s infinite alternate;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cima{
+    width: 100%;
+    float: left;
+    border-bottom: 3px solid #efefef;
+    height: 100px;
+}
+
+main, .content {
+  margin: 0 auto;
+}
+
+.logo-bd{
+    float: left;
+    flex: 1 0 100%;
+
+}
+
+.logo-ist {
+    flex: 1 0 100%;
+    float: right;
+    padding: 15px;
+
+}
+
+.logo-ist img, 
+.logo-bd img {
+    width: 100%;
+    height: auto;
+}
+
+.box-degrade {
+    width:  100%;
+    height: 100vh;
+    float: left;
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes degrade-animated {
+    0%{
+        background-position-x: 0% ;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.col-4-b, .col-4 {
+    background-color: #A4A4A4;
+    box-shadow: 0px 0px 5px 1px #6E6E6E;
+    position: relative;
+    background:rgba(255,255,255, 0.2);
+    margin-left: 3em;
+    float: left;
+}
+
+.col-4-b h3, .col-4 h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 2px solid #efefef;
+}
+
+.col-4-b ul li, .col-4 ul li {
+    display:  inline-block;
+    color: white;
+    margin-left: 5px;
+    font-size: 4vw;
+    margin-top: 2.5vw;
+    
+}
+
+.col-4 ul,
+.col-4-b ul {
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.col-4-b ul li a, .col-4 ul li a {
+    color: white;
+    font-size: 3.5vw;
+    margin-top: 2vw;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0.5em;
+   
+}
+
+ /*FORMS*/
+.box-degrade-form {
+    width:  100%;
+    padding: 100px 0;
+    float: left;
+    position: relative;
+    justify-content: center;
+}
+
+.box-degrade-form h3{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.forms{
+	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  justify-content: center;
+  max-width: 600px;
+	border-radius: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
+.forms label {
+	display: block;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+input[type=text] {
+  height: 40px;
+  width:  600px;
+}
+
+input[type=submit] {
+  height: 40px;
+  width: 300px;
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: #030056;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 8em;
+}
+
+
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 768px) {
+    .col-4, .col-4-b {
+      width: calc(25% - 6em);
+      height: calc(25% - 6em);
+      margin-left: 3em;
+      margin-top: 3em;
+    }
+  
+    .col-4-b {
+      margin-left: 0;
+    }
+  
+    .col-4-b ul li {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Styles for screens larger than 1024px */
+  @media screen and (min-width: 1024px) {
+    .content {
+      display: flex;
+    }
+  
+    .col-4,
+    .col-4-b {
+      width: calc(25% - 6em);
+      height: calc(25% - 6em);
+      margin: 2em;
+    }
+  }
+
+  /* IMAGENS LOGO*/
+
+  @media screen and (min-width: 768px) {
+    .logo-bd img,
+    .logo-ist img {
+      max-height: 94px;
+      max-width: 228px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .logo-bd img,
+    .logo-ist img {
+      max-height: 140px;
+      max-width: 260px;
+    }
+  }
+
+/* RETANGULOS*/
+
+@media screen and (min-width: 768px) {
+    .col-4 h3,
+    .col-4-b h3,
+    .col-4 ul li,
+    .col-4-b ul li {
+      font-size: 3vw;
+      margin-top: 2vw;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .col-4 h3,
+    .col-4-b h3,
+    .col-4 ul li,
+    .col-4-b ul li {
+      font-size: 2vw;
+      margin-top: 1.5vw;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .col-4 ul li a,
+    .col-4-b ul li a {
+      font-size: 1vw;
+      margin-top: 0.2vw;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .col-4 ul li a,
+    .col-4-b ul li a {
+      font-size: 1.5vw;
+     
+    }
+  }
+
+  .header1 h3{
+    text-align: center;
+    margin: auto;
+  }
